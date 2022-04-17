@@ -8,17 +8,24 @@ import { FaPlayCircle } from 'react-icons/fa';
 import BannerBG from 'assets/bannerBg.png';
 //import BannerThumb from 'assets/banner-thumb.png';
 import BannerThumb from 'assets/design.png';
+import { useRouter } from 'next/router'
 
 
 export default function Banner() {
+  const router = useRouter()
   const [videoOpen, setVideoOpen] = useState(false);
   const handleClick = (e) => {
     e.preventDefault();
     setVideoOpen(true);
   };
-  const buttonClicked = () => {
+  const buttonIosClicked = () => {
     console.log("clicked")
-    Router.push("https://apps.apple.com/jp/app/yorimichiapp/id1596625712")
+    router.push("https://apps.apple.com/jp/app/yorimichiapp/id1596625712")
+
+  }
+  const buttonAndroidClicked = () => {
+    console.log("clicked")
+    router.push("https://play.google.com/store/apps/details?id=com.agrimetal.yorimichi2")
 
   }
 
@@ -38,8 +45,11 @@ export default function Banner() {
 
           </Text>
           <Flex>
-            <Button variant="whiteButton" aria-label="Get Started" onClick={buttonClicked}>
-              Get Started
+            <Button ml="10px" variant="whiteButton" aria-label="Get Started" onClick={buttonIosClicked}>
+              Try iOS App 
+            </Button>
+            <Button ml="10px" variant="whiteButton" aria-label="Get Started" onClick={buttonAndroidClicked}>
+              Try Android App 
             </Button>
             <>
               <ModalVideo
@@ -118,6 +128,10 @@ const styles = {
     pr: 20,
     flexShrink: 0,
     pb: [2, null, 0],
+  },
+  button: {
+  
+
   },
   sponsorBox: {
     pt: ['35px', null, null, null, null, '45px'],
