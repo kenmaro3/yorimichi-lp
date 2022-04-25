@@ -8,6 +8,13 @@ import Carousel from 'react-multi-carousel';
 
 const data = [
   {
+    id: 0,
+    title: '「YorimichiApp」 Androidバージョンを公式サポート開始',
+    link: "https://pr-free.jp/2022/53109/",
+    imgSrc: "https://pr-free.jp/wp-content/uploads/2022/04/20220417_1222yorimichi_feature_graphic.png",
+    footerText: "公式プレスリリース"
+  },
+  {
     id: 1,
     title: '強化学習に学んだ人生観をiOSアプリに「YorimichiApp」',
     link: "https://note.com/yorimichi_app/n/nedebd9ab44b2",
@@ -19,7 +26,7 @@ const data = [
     title: '【プレスリリース】／「YorimichiApp」公式リリース',
     link: "https://pr-free.jp/2021/45712/",
     imgSrc: "https://pr-free.jp/wp-content/uploads/2021/11/20211124_1417top1.png",
-    footerText: "プレスリリース"
+    footerText: "公式プレスリリース"
   },
   {
     id: 3,

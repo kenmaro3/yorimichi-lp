@@ -4,6 +4,19 @@ import SectionHeader from 'components/section-header';
 import Accordion from 'components/accordion/accordion';
 const faqs = [
   {
+    title: 'iOS v1.5.0 のリリース (April 25, 2022)',
+    contents: (
+      <div>
+        - 「ゴーストモード」の追加（個人アカウントでログインすることなく、匿名性をもって投稿や閲覧をすることができます。ただし、個人アカウントでログインするときに比べ、機能に制限があります。）<br/>
+        - 「ゴーストとして投稿」機能の追加（個人アカウントでログインしていても、匿名で投稿できるようになります。） <br/>
+        -  既存投稿の編集機能追加 <br/>
+        -  ログイン画面に「ゴーストモード」としてのログイン機能、および機能の説明のモーダルの追加 <br/>
+        - 投稿、編集画面に設定項目の説明モーダルの追加 <br/>
+        - その他細かなレイアウトの修正
+      </div>
+    ),
+  },
+  {
     title: 'iOS v1.4.2 のリリース (Mar 20, 2022)',
     contents: (
       <div>
